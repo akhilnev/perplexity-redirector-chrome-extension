@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Perplexity Redirect",
+  "version": "1.0",
+  "description": "Automatically redirects to Perplexity AI on Chrome startup",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "redirect.html"
+  }
+}
